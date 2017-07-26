@@ -1,3 +1,5 @@
+import 'babel-polyfill';
+
 import Autocomplete from './Autocompletes';
 import Avatar from './Avatars';
 import BottomNavigation from './BottomNavigations';
