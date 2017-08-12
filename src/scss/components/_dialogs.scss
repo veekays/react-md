@@ -87,7 +87,7 @@ $md-dialog-horizontal-keyline: 40px;
     max-height: calc(100% - #{$md-dialog-vertical-keyline * 2});
     max-width: calc(100% - #{$md-dialog-horizontal-keyline * 2});
     top: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate(-50%, -50%);
 
     .md-list {
       padding-bottom: $md-dialog-padding - $md-default-padding;
@@ -105,20 +105,20 @@ $md-dialog-horizontal-keyline: 40px;
   }
 
   .md-dialog--centered-enter {
-    transform: translate3d(-50%, calc(-50% + #{$md-dialog-translate-distance}), 0);
+    transform: translate(-50%, calc(-50% + #{$md-dialog-translate-distance}));
 
     &.md-dialog--centered-enter-active {
-      transform: translate3d(-50%, -50%, 0);
+      transform: translate(-50%, -50%);
       transition-duration: $md-dialog-transition-time;
       transition-property: transform;
     }
   }
 
   .md-dialog--centered-leave {
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate(-50%, -50%);
 
     &.md-dialog--centered-leave-active {
-      transform: translate3d(-50%, calc(-50% + #{$md-dialog-translate-distance}), 0);
+      transform: translate(-50%, calc(-50% + #{$md-dialog-translate-distance}));
       transition-duration: $md-dialog-transition-time;
       transition-property: transform;
     }

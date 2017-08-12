@@ -850,7 +850,7 @@ $md-text-field-line-height: 1.15 !default;
     $text-field-size: floor($md-text-field-mobile-font-size * $md-line-height);
     $distance: $md-text-field-mobile-top-padding + $md-text-field-active-font-size + ($text-field-size / 2);
 
-    transform: translate3d(0, $distance, 0);
+    transform: translate(0, $distance);
   }
 
   .md-floating-label--inactive-sized {
@@ -858,7 +858,7 @@ $md-text-field-line-height: 1.15 !default;
   }
 
   .md-floating-label--floating {
-    transform: translate3d(0, 16px, 0);
+    transform: translate(0, 16px);
   }
 }
 
@@ -875,7 +875,7 @@ $md-text-field-line-height: 1.15 !default;
     $text-field-size: floor($md-text-field-desktop-font-size * $md-line-height);
     $distance: $md-text-field-desktop-top-padding + $md-text-field-active-font-size + ($text-field-size / 2);
 
-    transform: translate3d(0, $distance, 0);
+    transform: translate(0, $distance);
   }
 
   .md-floating-label--inactive-sized {
@@ -883,7 +883,7 @@ $md-text-field-line-height: 1.15 !default;
   }
 
   .md-floating-label--floating {
-    transform: translate3d(0, 12px, 0);
+    transform: translate(0, 12px);
   }
 }
 
@@ -1294,12 +1294,12 @@ $md-text-field-line-height: 1.15 !default;
     }
 
     &::before {
-      transform: translate3d(-1px, -50%, 0) rotate3d(0, 0, 1, 45deg);
+      transform: translate(-1px, -50%, 0) rotate3d(0, 0, 1, 45);
     }
 
     &::after {
       background: get-color('background', $light-theme);
-      transform: translate3d(1px, -50%, 0) rotate3d(0, 0, 1, 45deg);
+      transform: translate(1px, -50%, 0) rotate3d(0, 0, 1, 45);
     }
   }
 }
@@ -1455,7 +1455,7 @@ $md-text-field-line-height: 1.15 !default;
 @mixin react-md-text-field-custom-size-mobile($name, $list, $include-floating-label: $md-text-field-include-floating-label) {
   @if $include-floating-label != null {
     .md-floating-label--inactive-#{$name} {
-      transform: translate3d(0, nth($list, 3), 0);
+      transform: translate(0, nth($list, 3));
     }
   }
 }
@@ -1479,7 +1479,7 @@ $md-text-field-line-height: 1.15 !default;
 @mixin react-md-text-field-custom-size-desktop($name, $list, $include-floating-label: $md-text-field-include-floating-label) {
   @if $include-floating-label != null {
     .md-floating-label--inactive-#{$name} {
-      transform: translate3d(0, nth($list, 4), 0);
+      transform: translate(0, nth($list, 4));
     }
   }
 }
